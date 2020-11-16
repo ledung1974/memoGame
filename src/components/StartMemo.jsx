@@ -17,17 +17,3 @@ export default function StartMemo(props) {
         </div>
     )
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
