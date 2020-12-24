@@ -45,7 +45,7 @@ class DivImageCard extends Component {
                         const suitsCheck = card1[1]+card2[1];
                         const suitPairs =["DH", "HD", "CS", "SC"];
                         if (suitPairs.includes(suitsCheck)){
-                            window.$isCorrectCards = true;
+                            window.$isCorrectCard = true;
                         }else{window.$isFlipBackPairCards = true;
                         }
                     }else{window.$isFlipBackPairCards = true}

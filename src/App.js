@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import logo from './logo.svg';
 import StartMemo from './components/StartMemo.jsx';
 import MainMemo from './components/MainMemo.jsx';
+import AudioMemo from "./components/AudioMemo";
 
 function App() {
   const [playerName, setPlayerName] = useState("");
@@ -23,6 +24,7 @@ function App() {
     <div className="App"> 
         {playerName === ""    ? <StartMemo logo={logo} handleButtonClick={handleStartClick}/>
                               : <MainMemo logo={logo} playerName={playerName}/>}
+        <AudioMemo />
     </div>
   );
 }

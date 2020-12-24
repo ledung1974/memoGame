@@ -8,7 +8,7 @@ export default function StartMemo(props) {
             <header className="start-header">
                 <img className="start-logo" src={props.logo} alt="logo" />
                 <h1>Memo Game</h1>
-                <p> Le Dung - ComIT 2020 </p>
+                <p> Memo Game version 2.1 by Le Dung 2020 </p>
             </header>
             <div className="login-div">
                 <LevelMemo />

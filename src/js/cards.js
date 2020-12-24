@@ -34,7 +34,7 @@ export function removeCardFromDeck(){
 	let this2 = window.$thisSetStates.pop();
 	this1.setState((state) => ({isOnDeck: false}));
 	this2.setState((state) => ({isOnDeck: false}));
-	window.$isCorrectCards = false;
+	window.$isCorrectCard = false;
 	window.$flippedCards = [];
 	window.$numberCardsOnDeck -=2;//2 cards are out of the deck
 	if (window.$isNextCard){//Also flip the next-clicked card
@@ -50,7 +50,7 @@ export function flipBackPairCards(){
 	let this2 = window.$thisSetStates.pop();
 	this1.setState((state) => ({isShowed: false}));
 	this2.setState((state) => ({isShowed: false}));
-	window.$isCorrectCards = false;
+	window.$isCorrectCard = false;
 	window.$isFlipBackPairCards = false;
 	window.$flippedCards = [];
 	if (window.$isNextCard){//Also flip the next-clicked card

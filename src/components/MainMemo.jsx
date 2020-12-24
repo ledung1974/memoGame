@@ -36,7 +36,7 @@ class MainMemo extends Component {
         window.$isGameOver = false;//Over limit time
         window.$flippedCards = [];
         window.$numberCardsOnDeck = window.$cardsTotal;
-        window.$isCorrectCards = false;
+        window.$isCorrectCard = false;
         window.$isFlipBackPairCards = false;
         window.$thisSetStates=[];
         window.$yourCount = 0;

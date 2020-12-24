@@ -7,7 +7,7 @@ export function eventsProcess() {
     if (window.$isTimerStart) {
         if (!window.$isOnEventDeckChange) {
             //If you have just flipped a correct card 
-            if (window.$isCorrectCards) {
+            if (window.$isCorrectCard) {
                 window.$isOnEventDeckChange = true;//Disable mouse click when remove cards
                 window.$delayCount = 1;
             }
@@ -38,7 +38,7 @@ export function eventsProcess() {
 
         } else {
             if (window.$isNextCard || window.$delayCount === 200 || window.$delayCount === 500) {
-                if (window.$isCorrectCards) {
+                if (window.$isCorrectCard) {
                     window.$delayCount = 0;
                     removeCardFromDeck();
                 } else {
@@ -55,7 +55,7 @@ export function eventsProcess() {
             } else {
                 window.$delayCount += 1;
                 if (window.$delayCount === 50) {
-                    if (window.$isCorrectCards) { soundGame("Correct card"); }
+                    if (window.$isCorrectCard) { soundGame("Correct card"); }
                     if (window.$isFlipBackPairCards) { soundGame("Wrong card"); }
                 }
             }
